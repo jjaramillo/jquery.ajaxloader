@@ -23,8 +23,8 @@
                     var ajaxloader = $('<div class="Ajax-Loader"><div class="Ajax-Loader-Overlay"></div><div class="Ajax-Loader-Image ui-corner-all"><img src="' + settings.baseurl + settings.image + '"/></div></div>');
                     $('body').append(ajaxloader);
                     if (settings.fullscreen === false) {
-                        ajaxloader.css('top', this.offset().top).css('left', this.offset().left).width(this.outerWidth()).height(this.outerHeight()).css('position', 'absolute').css('z-index', 99999);
-                        ajaxloader.find('.Ajax-Loader-Overlay').css({ opacity: 0.5, 'background-color': settings.backgroundcolor }).width(this.outerWidth()).height(this.outerHeight());
+                        ajaxloader.css('top', $(this).offset().top).css('left', $(this).offset().left).width($(this).outerWidth()).height($(this).outerHeight()).css('position', 'absolute').css('z-index', 99999);
+                        ajaxloader.find('.Ajax-Loader-Overlay').css({ opacity: 0.5, 'background-color': settings.backgroundcolor }).width($(this).outerWidth()).height($(this).outerHeight());
                     }
                     else {
                         ajaxloader.css({ width: '100%', height: '100%', position: 'absolute', 'z-index': 99999, top: 0, left: 0 });
