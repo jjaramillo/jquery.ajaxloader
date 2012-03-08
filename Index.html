@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>JQuery Ajax Loader Sample</title>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.loading.debug.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+                $('#hello-div').ajaxloader({fullscreen: true});
+            }
+        );
+    </script>
+</head>
+<body>
+    <!-- Insert your content here -->
+    <div id="hello-div">
+        <p>
+            Hello there<br/>
+            I'm an awesome div and you're trying an example of JQuery Ajaxloader plugin
+        </p>
+    </div>
+</body>
+</html>
